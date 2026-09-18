@@ -10,8 +10,12 @@ import numpy as np
 def build_vocab(text):
     return sorted(set(text))
 
-# Step 2 - build_stoi (not yet solved)
-# TODO: implement
+# Step 2 - build_stoi
+def build_stoi(vocab):
+    lists = {}
+    for i in range(len(vocab)):
+        lists[vocab[i]] = i
+    return lists
 
 # Step 3 - build_itos (not yet solved)
 # TODO: implement
